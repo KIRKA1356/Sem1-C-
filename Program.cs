@@ -1,18 +1,9 @@
-﻿int num1, num2, quad;                       //Объявление необходиммых переменных
+﻿int num, num2;
 
-Console.Write("Imput first number: ");      //Предложение ко вводу первого числа
-num1 = Convert.ToInt32(Console.ReadLine()); //Ввод первого числа с конвертацией
+Console.Write("ВВедите число, квадрат которого хотите получить: ");
+num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Imput second number: ");     //Предложение ко вводу второго числа
-num2 = Convert.ToInt32(Console.ReadLine()); //Ввод второго числа
+num2 = num*num;
 
-quad=num2*num2;                             //Условие
 
-if (quad==num1)                             //Условный оператор, при котором будут выодиться ответы
-{
-    Console.WriteLine("Yes");           
-}
-else
-{
-        Console.WriteLine("No");
-}
+Console.Write("Ваше число в квадрате равно " + num2);
